@@ -1,0 +1,53 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  margin-top: 0;
+  padding: 0;
+}
+
+img {
+  width: 80%;
+}
+
+.nav{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.btn {
+  padding: 1.125em;
+  border-radius: 10px;
+}
+
+.btn-nav {
+  background-color: #90C4B7;
+}
+
+.container {
+  width: 60%;
+  max-width: 1182px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 1rem;
+  text-align: center;
+}
