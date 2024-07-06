@@ -19,7 +19,7 @@ function about() {
 
   hoursTitle.classList.add('about__title');
   phoneTitle.classList.add('about__title');
-  locTitle.classList.add('about__title')
+  locTitle.classList.add('about__title');
 
   aboutDiv.classList.add('about');
   hoursDiv.classList.add('about__section');
