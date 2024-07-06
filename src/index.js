@@ -1,38 +1,34 @@
-import hero1 from './hero1.jpg';
 import './style.css';
+import displayMenu from './menu.js';
+import home from './home.js';
+import about from './about.js';
 
 const contentDiv = document.querySelector('#content');
-const nav = document.querySelector('#nav');
-const navButtons = document.querySelectorAll('.btn-nav')
+contentDiv.classList.add('container');
 
-nav.classList.add('nav')
-navButtons.forEach(button => {
-  button.classList.add('btn-nav')
+const homeButton = document.querySelector('#home');
+const menuButton = document.querySelector('#menu');
+const aboutButton = document.querySelector('#about');
+
+homeButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  contentDiv.innerHTML = '';
+  contentDiv.appendChild(home());
 });
 
-function component() {
-  const mainDiv = document.createElement('div');
-  const restHeader = document.createElement('h1');
-  const restTagline = document.createElement('h2');
+menuButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  contentDiv.innerHTML = '';
 
-  mainDiv.classList.add('hero');
+  contentDiv.appendChild(displayMenu());
+});
 
-  restHeader.innerText = "Perk"
-  restTagline.innerText = "Sip, Snack, Socialize";
-  
-  restHeader.classList.add('title');
-  restTagline.classList.add('tagline');
+aboutButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  contentDiv.innerHTML = '';
 
-  mainDiv.appendChild(restHeader);
-  mainDiv.appendChild(restTagline);
+  contentDiv.appendChild(about());
+});
 
-  const restHero = new Image();
-  restHero.src = hero1;
+contentDiv.appendChild(home());
 
-  mainDiv.appendChild(restHero);
-
-  return mainDiv;
-}
-
-contentDiv.classList.add('container');
-contentDiv.appendChild(component());

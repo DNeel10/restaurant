@@ -11,28 +11,45 @@ img {
   width: 80%;
 }
 
-.nav{
+.nav {
   width: 80%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 2em;
   margin: 0 auto;
   padding: 2em;
 }
 
 .btn {
-  padding: 1.125em;
+  padding: 1.125em 2.25em;
   border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.125rem; 
+  border: 1px solid #90C4B7;
 }
 
 .btn-nav {
   background-color: #90C4B7;
+  font-weight: 400;
+  width: 100%;
+  max-width: 200px;
+}
+
+.btn-nav:hover,
+.btn-nav:focus {
+  opacity: .85;
+  border: 1px solid #E35720;
 }
 
 .container {
   width: 60%;
   max-width: 1182px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero {
@@ -45,9 +62,57 @@ img {
 .title {
   font-size: 2rem;
   text-align: center;
+  color: #E35720;
 }
 
 .tagline {
   font-size: 1rem;
   text-align: center;
+  color: #90C4B7;
+}
+
+.dish {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px grey;
+  padding: 1em 2em;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.dish__name {
+  color: #90C4B7;
+  font-size: 1.125rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.about__section {
+  margin-top: 2em;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px grey;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+
+  padding: 1em 2em;
+}
+
+.about__title {
+  color: #E35720
 }
