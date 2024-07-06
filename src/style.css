@@ -1,5 +1,7 @@
 *, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2 {
@@ -9,6 +11,11 @@ h1, h2 {
 
 img {
   width: 80%;
+}
+header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .nav {
@@ -57,18 +64,21 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 2em;
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 4rem;
   text-align: center;
   color: #E35720;
+  margin-top: 1em auto;
 }
 
 .tagline {
   font-size: 1rem;
   text-align: center;
   color: #90C4B7;
+  margin: 1em auto;
 }
 
 .dish {
@@ -83,6 +93,7 @@ img {
   border-radius: 10px;
   width: 100%;
   max-width: 500px;
+  gap: 1em;
 }
 
 .dish__name {
@@ -114,5 +125,6 @@ img {
 }
 
 .about__title {
-  color: #E35720
+  color: #E35720;
+  margin-bottom: 1em;
 }

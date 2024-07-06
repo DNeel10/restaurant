@@ -13,8 +13,8 @@ function about() {
   const phone = document.createElement('p');
   const loc= document.createElement('p');
 
-  hoursTitle.innerText = 'Hours of Operation';
-  phoneTitle.innerText = 'Phone Number'
+  hoursTitle.innerText = 'Hours';
+  phoneTitle.innerText = 'Phone'
   locTitle.innerText = 'Address'
 
   hoursTitle.classList.add('about__title');
@@ -26,8 +26,8 @@ function about() {
   phoneDiv.classList.add('about__section');
   locDiv.classList.add('about__section');
 
-  hours.innerText = '7am - 4pm Tuesday - Sunday';
-  phone.innerText = '555-555-5555';
+  hours.innerText = 'Tu-Su | 7a - 4p';
+  phone.innerText = '(555) 555 5555';
   loc.innerText = '123 Main St.'
 
   hoursDiv.appendChild(hoursTitle);
